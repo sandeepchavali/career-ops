@@ -1,0 +1,96 @@
+# Career-Ops Profile Configuration
+# Copy this file to config/profile.yml and fill in your details.
+# This is the single source of truth for your personal data across all modes.
+
+candidate:
+  full_name: "Laxmi Sandeep Chavali"
+  email: "c.chavali.sandeep@gmail.com"
+  phone: "+91-8317645211"
+  location: "Bengaluru, India"
+  linkedin: "linkedin.com/in/sandeep-chavali-3a98ba96"
+  # portfolio_url: ""
+  # github: ""
+  # twitter: ""
+
+target_roles:
+  # Your North Star roles — what you're optimizing for
+  primary:
+    - "Senior Frontend Engineer"
+    - "Staff Frontend Engineer"
+    - "Engineering Manager"
+  # Archetypes help the evaluation system score fit
+  archetypes:
+    - name: "Senior Frontend Engineer"
+      level: "Senior"
+      fit: "primary"        # primary = dream role, secondary = good fit, adjacent = stretch
+    - name: "Staff Frontend Engineer"
+      level: "Staff"
+      fit: "primary"
+    - name: "Engineering Manager"
+      level: "Manager"
+      fit: "primary"
+
+narrative:
+  # Your professional headline (1 line)
+  headline: "Senior Frontend Engineer with 10+ years building enterprise SaaS"
+  # Your exit story — what makes you unique
+  exit_story: "10+ years across the full frontend stack — from Android to React — with a track record of leading teams, owning complex modules end-to-end, and shipping measurable performance gains at enterprise scale."
+  # Your top 3-5 superpowers
+  superpowers:
+    - "React architecture and performance optimization (Lighthouse 18 → 90+)"
+    - "Micro frontend ownership and delivery"
+    - "Team leadership and mentoring (up to 6 reports)"
+    - "Real-time data systems (SSE, WebSocket, GraphQL)"
+    - "AI-assisted development (Claude Code, GitHub Copilot)"
+  # Proof points — projects, articles, case studies with measurable impact
+  proof_points:
+    - name: "Roadmap Micro Frontend — Planview"
+      hero_metric: "Cut deployment overhead by 90%"
+    - name: "SSE Real-Time Data Layer — Planview"
+      hero_metric: "Boosted sync reliability 3x"
+    - name: "App Performance Overhaul — Goodworker"
+      hero_metric: "Lighthouse 18 → 90+, load time 10s → <3s"
+    - name: "Frontend Team Lead — Goodworker"
+      hero_metric: "Led 6-member team to 99.9% crash-free users"
+  # Optional: dashboard/demo URL with credentials
+  # dashboard:
+  #   url: ""
+  #   password: ""
+
+compensation:
+  target_range: "$150K-400K"     # Your target total comp
+  currency: "USD"
+  minimum: "$150K"               # Walk-away number
+  location_flexibility: "Open to anything"
+
+location:
+  country: "Australia"
+  city: "Sydney / Melbourne"
+  timezone: "AEST"
+  visa_status: "Visa sponsorship required"
+
+cv:
+  output_format: "html" # "html" (default) or "latex"
+  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
+  # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
+  # The ID starts with "D" and is 11 characters long.
+  # canva_resume_design_id: "DAxxxxxxxxx"
+
+# Auto-PDF threshold during evaluation (used by `/career-ops pipeline` and
+# `bash batch/batch-runner.sh`).
+#
+# An offer's tailored CV PDF is auto-generated only when its score is
+# >= this threshold. Generating a PDF costs ~30-60s per offer (Playwright
+# launch + HTML render), and most offers in a scan score 2.x/3.x and never
+# become an actual application — so the gate avoids wasted renders.
+#
+# Default (key absent OR commented out): 3.0 — the original gate of
+# `/career-ops pipeline`. Both evaluation paths apply the same default, so
+# a batch run and an interactive run treat the same offer identically.
+#
+# Raise it (e.g. 4.0) to auto-generate PDFs only for stronger matches and
+# leave the rest report-only — those can still be produced on demand via
+# `/career-ops pdf {company-slug}`. Fractional thresholds work (e.g. 3.5 —
+# half-point scores like 3.5/5 occur in evaluations). Set it to 0 to
+# generate a PDF for every offer.
+# auto_pdf_score_threshold: 4.0
