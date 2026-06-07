@@ -12,51 +12,39 @@
 
 ## Your Target Roles
 
-<!-- Replace these with YOUR target roles. Examples:
-     - Senior Backend Engineer / Staff Platform Engineer
-     - AI Product Manager / Technical PM
-     - Data Engineer / ML Engineer
-     - DevOps / SRE / Platform
-     Whatever you're optimizing for. -->
-
 | Archetype | Thematic axes | What they buy |
 |-----------|---------------|---------------|
-| **AI Platform / LLMOps Engineer** | Evaluation, observability, reliability, pipelines | Someone who puts AI in production with metrics |
-| **Agentic Workflows / Automation** | HITL, tooling, orchestration, multi-agent | Someone who builds reliable agent systems |
-| **Technical AI Product Manager** | GenAI/Agents, PRDs, discovery, delivery | Someone who translates business to AI product |
-| **AI Solutions Architect** | Hyperautomation, enterprise, integrations | Someone who designs end-to-end AI architectures |
-| **AI Forward Deployed Engineer** | Client-facing, fast delivery, prototyping | Someone who delivers AI solutions to clients fast |
-| **AI Transformation Lead** | Change management, adoption, org enablement | Someone who leads AI transformation in an org |
+| **Senior Frontend Engineer** | React, Performance, Micro Frontends, Scalability | Expert who ships complex UI modules with high performance |
+| **Staff Frontend Engineer** | Architecture, Cross-team impact, Platform, Tooling | Strategic lead who builds the foundation for other frontend teams |
+| **Engineering Manager** | Team Lead, Mentoring, Roadmap, Stakeholders | Leader who grows people and delivers high-impact product modules |
 
 ## Your Adaptive Framing
 
-<!-- Map YOUR projects to each archetype. Example:
-     | Platform / LLMOps | My monitoring dashboard project | article-digest.md |
-     | Agentic | My chatbot with HITL escalation | cv.md section 3 | -->
-
 | If the role is... | Emphasize about you... | Proof point sources |
 |-------------------|------------------------|---------------------|
-| Platform / LLMOps | Production systems builder, observability, evals | article-digest.md + cv.md |
-| Agentic / Automation | Multi-agent orchestration, HITL, reliability | article-digest.md + cv.md |
-| Technical AI PM | Product discovery, PRDs, metrics | cv.md + article-digest.md |
-| Solutions Architect | System design, integrations, enterprise-ready | article-digest.md + cv.md |
-| Forward Deployed Engineer | Fast delivery, client-facing, prototype to prod | cv.md + article-digest.md |
-| AI Transformation Lead | Change management, team enablement, adoption | cv.md + article-digest.md |
+| Senior Frontend | React perf (18->90+), Micro frontends, SSE real-time | cv.md + profile.yml |
+| Staff Frontend | Micro frontend architecture, sync reliability (3x), i18n | cv.md + profile.yml |
+| Engineering Manager | Leading 6 members, 99.9% crash-free, roadmap ownership | cv.md + profile.yml |
 
 ## Your Exit Narrative
 
-<!-- Replace with YOUR story. This frames everything. -->
-
 Use the candidate's exit story from `config/profile.yml` to frame ALL content:
-- **In PDF Summaries:** Bridge from past to future
-- **In STAR stories:** Reference proof points from article-digest.md
-- **In Draft Answers:** The transition narrative appears in the first response
+- **In PDF Summaries:** Bridge from 10+ years of frontend expertise to the next high-growth role in Australia.
+- **In STAR stories:** Focus on measurable impact (90% deployment cut, 3x sync reliability).
+- **In Draft Answers:** Frame the move to Australia as a strategic career step to contribute to its thriving tech ecosystem.
 
 ## Your Cross-cutting Advantage
 
-<!-- What's your "signature move"? What do you do that others can't? -->
+Frame profile as **"10+ year Frontend Specialist who combines deep React expertise with proven team leadership and architecture ownership."**
 
-Frame profile as **"Technical builder with real-world proof"** that adapts framing to the role.
+## Visa Sponsorship Note
+
+**Status:** Visa sponsorship required for Australia.
+**Talking Points:**
+- "I am looking for roles that offer visa sponsorship for Australia (e.g., Subclass 482 or 186)."
+- "I have 10+ years of experience and am highly competitive for skilled migration."
+- "My goal is to relocate to Sydney or Melbourne and contribute long-term to the local tech community."
+
 
 ## Your Portfolio / Demo
 

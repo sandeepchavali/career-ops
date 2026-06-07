@@ -65,12 +65,13 @@
 # -- Title filter --
 # The scanner uses these keywords to decide if a title is relevant.
 # At least 1 positive must match AND 0 negatives must match (case-insensitive).
-
 location_filter:
   always_allow:
     - "Australia"
     - "Sydney"
     - "Melbourne"
+    - "Remote"
+    - "Hybrid"
   allow:
     - "Australia"
     - "Sydney"
@@ -84,13 +85,54 @@ location_filter:
     - "Hybrid"
     - "ANZ"
     - "APAC"
-    - "Germany"
-    - "France"
     - "Singapore"
-    - "Japan"
     - "Canada"
     - "United States"
     - "USA"
+    - "United Kingdom"
+    - "London"
+    - "UK"
+    - "Japan"
+    - "France"
+    - "Paris"
+    - "Germany"
+    - "Berlin"
+    - "Munich"
+    - "Italy"
+    - "Rome"
+    - "Milan"
+    - "Portugal"
+    - "Lisbon"
+    - "Europe"
+    - "EU"
+    - "European Union"
+    - "EMEA"
+    - "Sweden"
+    - "Norway"
+    - "Denmark"
+    - "Netherlands"
+    - "Amsterdam"
+    - "Spain"
+    - "Barcelona"
+    - "Madrid"
+    - "Ireland"
+    - "Dublin"
+    - "Switzerland"
+    - "New Zealand"
+  block:
+    - "India"
+    - "Bengaluru"
+    - "Bangalore"
+    - "Middle East"
+    - "UAE"
+    - "Dubai"
+    - "Saudi Arabia"
+    - "Qatar"
+    - "Kuwait"
+    - "Bahrain"
+    - "Oman"
+    - "Brazil"
+
 
 title_filter:
   positive:
@@ -211,7 +253,254 @@ target_companies:
 
 tracked_companies:
 
-  # -- AI Labs & LLM providers --
+  # -- Australian Tech & Global SaaS --
+
+  - name: Canva
+    careers_url: https://job-boards.greenhouse.io/canva
+    api: https://boards-api.greenhouse.io/v1/boards/canva/jobs
+    notes: "Sydney. Graphic design platform unicorn."
+    enabled: true
+
+  - name: Atlassian
+    careers_url: https://jobs.lever.co/atlassian
+    notes: "Sydney. Collaboration software leader (Jira, Confluence)."
+    enabled: true
+
+  - name: Xero
+    careers_url: https://www.xero.com/about/careers
+    scan_method: websearch
+    scan_query: 'site:xero.com/about/careers "Frontend" OR "Software Engineer" Australia'
+    notes: "NZ/AU. Accounting software leader."
+    enabled: true
+
+  - name: Airwallex
+    careers_url: https://job-boards.greenhouse.io/airwallex
+    api: https://boards-api.greenhouse.io/v1/boards/airwallex/jobs
+    notes: "Melbourne. Fintech unicorn."
+    enabled: true
+
+  - name: Culture Amp
+    careers_url: https://job-boards.greenhouse.io/cultureamp
+    api: https://boards-api.greenhouse.io/v1/boards/cultureamp/jobs
+    notes: "Melbourne. Employee experience platform."
+    enabled: true
+
+  - name: SafetyCulture
+    careers_url: https://job-boards.greenhouse.io/safetyculture
+    api: https://boards-api.greenhouse.io/v1/boards/safetyculture/jobs
+    notes: "Sydney. Operations platform."
+    enabled: true
+
+  - name: Employment Hero
+    careers_url: https://job-boards.greenhouse.io/employmenthero
+    api: https://boards-api.greenhouse.io/v1/boards/employmenthero/jobs
+    notes: "Sydney. HR & payroll platform."
+    enabled: true
+
+  - name: WiseTech Global
+    careers_url: https://wisetechglobal.com/careers
+    scan_method: websearch
+    scan_query: 'site:wisetechglobal.com/careers "Software Engineer" Australia'
+    notes: "Sydney. Logistics software leader."
+    enabled: true
+
+  - name: REA Group
+    careers_url: https://www.rea-group.com/careers
+    scan_method: websearch
+    scan_query: 'site:rea-group.com/careers "Frontend" OR "Software Engineer"'
+    notes: "Melbourne. Real estate tech (realestate.com.au)."
+    enabled: true
+
+  - name: SEEK
+    careers_url: https://www.seek.com.au/about/careers
+    scan_method: websearch
+    scan_query: 'site:seek.com.au/about/careers "Engineer"'
+    notes: "Melbourne. Jobs marketplace leader."
+    enabled: true
+
+  - name: GitLab
+    careers_url: https://job-boards.greenhouse.io/gitlab
+    api: https://boards-api.greenhouse.io/v1/boards/gitlab/jobs
+    notes: "Remote-first. DevOps platform."
+    enabled: true
+
+  - name: Stripe
+    careers_url: https://stripe.com/jobs
+    scan_method: websearch
+    scan_query: 'site:stripe.com/jobs "Frontend" OR "Software Engineer" Australia OR Remote'
+    notes: "Payments infrastructure."
+    enabled: true
+
+  - name: Datadog
+    careers_url: https://job-boards.greenhouse.io/datadog
+    api: https://boards-api.greenhouse.io/v1/boards/datadog/jobs
+    notes: "Observability platform."
+    enabled: true
+
+  - name: MongoDB
+    careers_url: https://job-boards.greenhouse.io/mongodb
+    api: https://boards-api.greenhouse.io/v1/boards/mongodb/jobs
+    notes: "Modern database platform."
+    enabled: true
+
+  - name: Cloudflare
+    careers_url: https://job-boards.greenhouse.io/cloudflare
+    api: https://boards-api.greenhouse.io/v1/boards/cloudflare/jobs
+    notes: "Internet security & performance."
+    enabled: true
+
+  - name: Elastic
+    careers_url: https://job-boards.greenhouse.io/elastic
+    api: https://boards-api.greenhouse.io/v1/boards/elastic/jobs
+    notes: "Search & observability."
+    enabled: true
+
+  - name: Grafana Labs
+    careers_url: https://job-boards.greenhouse.io/grafanalabs
+    api: https://boards-api.greenhouse.io/v1/boards/grafanalabs/jobs
+    notes: "Open-source observability."
+    enabled: true
+
+  - name: HashiCorp
+    careers_url: https://job-boards.greenhouse.io/hashicorp
+    api: https://boards-api.greenhouse.io/v1/boards/hashicorp/jobs
+    notes: "Infrastructure automation."
+    enabled: true
+
+  - name: Zendesk
+    careers_url: https://job-boards.greenhouse.io/zendesk
+    api: https://boards-api.greenhouse.io/v1/boards/zendesk/jobs
+    notes: "Customer service software."
+    enabled: true
+
+  - name: HubSpot
+    careers_url: https://job-boards.greenhouse.io/hubspot
+    api: https://boards-api.greenhouse.io/v1/boards/hubspot/jobs
+    notes: "CRM and marketing platform."
+    enabled: true
+
+  # -- Additional AU Scale-ups & Platforms --
+
+  - name: Domain
+    careers_url: https://www.domain.com.au/group/careers
+    scan_method: websearch
+    scan_query: 'site:domain.com.au/group/careers "Engineer"'
+    notes: "Sydney/Melbourne. Real estate tech."
+    enabled: true
+
+  - name: Buildkite
+    careers_url: https://jobs.ashbyhq.com/buildkite
+    notes: "Melbourne/Remote. CI/CD platform leader."
+    enabled: true
+
+  - name: Linktree
+    careers_url: https://job-boards.greenhouse.io/linktree
+    api: https://boards-api.greenhouse.io/v1/boards/linktree/jobs
+    notes: "Melbourne. Link-in-bio pioneer."
+    enabled: true
+
+  - name: Envato
+    careers_url: https://envato.com/careers
+    scan_method: websearch
+    scan_query: 'site:envato.com/careers "Engineer"'
+    notes: "Melbourne. Creative assets marketplace."
+    enabled: true
+
+  - name: Octopus Deploy
+    careers_url: https://octopus.com/company/careers
+    scan_method: websearch
+    scan_query: 'site:octopus.com/company/careers "Engineer"'
+    notes: "Brisbane. Deployment automation."
+    enabled: true
+
+  - name: Zip
+    careers_url: https://job-boards.greenhouse.io/zip
+    api: https://boards-api.greenhouse.io/v1/boards/zip/jobs
+    notes: "Sydney. Fintech BNPL leader."
+    enabled: true
+
+  - name: Nearmap
+    careers_url: https://job-boards.greenhouse.io/nearmap
+    api: https://boards-api.greenhouse.io/v1/boards/nearmap/jobs
+    notes: "Sydney. Aerial imagery & location intelligence."
+    enabled: true
+
+  - name: Shopify
+    careers_url: https://www.shopify.com/careers
+    scan_method: websearch
+    scan_query: 'site:shopify.com/careers "Frontend" OR "Engineering Manager" Australia OR Remote'
+    notes: "Global ecommerce leader with strong AU presence."
+    enabled: true
+
+  # -- Australian VC Portfolio Pages (High Yield) --
+
+  - name: Blackbird Ventures Portfolio
+    careers_url: https://blackbird.vc/jobs
+    scan_method: websearch
+    scan_query: 'site:blackbird.vc/jobs "Frontend" OR "Software Engineer"'
+    notes: "Access to 100+ AU/NZ startups (Canva, SafetyCulture, etc.)."
+    enabled: true
+
+  - name: AirTree Ventures Portfolio
+    careers_url: https://www.airtree.vc/jobs
+    scan_method: websearch
+    scan_query: 'site:airtree.vc/jobs "Frontend" OR "Software Engineer"'
+    notes: "Major AU VC (Linktree, Employment Hero, Pet Circle)."
+    enabled: true
+
+  - name: Square Peg Capital Portfolio
+    careers_url: https://www.squarepegcap.com/jobs
+    scan_method: websearch
+    scan_query: 'site:squarepegcap.com/jobs "Frontend" OR "Software Engineer"'
+    notes: "Global VC with deep AU roots (Airwallex, Rokt)."
+    enabled: true
+
+  - name: Airtasker
+    careers_url: https://job-boards.greenhouse.io/airtasker
+    api: https://boards-api.greenhouse.io/v1/boards/airtasker/jobs
+    notes: "Sydney. Services marketplace."
+    enabled: true
+
+  - name: Rokt
+    careers_url: https://job-boards.greenhouse.io/rokt
+    api: https://boards-api.greenhouse.io/v1/boards/rokt/jobs
+    notes: "Sydney/NYC. Ecommerce technology unicorn."
+    enabled: true
+
+  - name: Dovetail
+    careers_url: https://jobs.ashbyhq.com/dovetail
+    notes: "Sydney. Customer research platform."
+    enabled: true
+
+  # -- High-Yield Visa-First Portals --
+
+  - name: Arbeitnow
+    careers_url: https://www.arbeitnow.com
+    scan_method: websearch
+    scan_query: 'site:arbeitnow.com "Frontend" OR "Engineering Manager" "Visa Sponsorship"'
+    notes: "Berlin. The #1 board for visa-sponsored tech roles in Germany."
+    enabled: true
+
+  - name: Relocate.me
+    careers_url: https://relocate.me
+    scan_method: websearch
+    scan_query: 'site:relocate.me "Frontend" OR "Engineering Manager"'
+    notes: "Global. Specifically for roles offering relocation packages."
+    enabled: true
+
+  - name: VanHack
+    careers_url: https://vanhack.com/jobs
+    scan_method: websearch
+    scan_query: 'site:vanhack.com/jobs "Frontend" OR "React"'
+    notes: "Canada/EU. Platform focused on relocating talent."
+    enabled: true
+
+  - name: Otta
+    careers_url: https://otta.com
+    scan_method: websearch
+    scan_query: 'site:otta.com "Frontend" OR "Engineering Manager" "Visa Sponsorship"'
+    notes: "UK/Europe. Curated high-growth tech jobs."
+    enabled: true
 
   - name: Anthropic
     careers_url: https://job-boards.greenhouse.io/anthropic
@@ -902,6 +1191,18 @@ search_queries:
     query: '"React Engineer" Australia visa sponsorship'
     enabled: true
 
+  - name: Australia — Visa Sponsorship Frontend
+    query: '"Frontend Engineer" Australia "visa sponsorship"'
+    enabled: true
+
+  - name: Australia — Relocation Frontend
+    query: '"Frontend Engineer" Australia "relocation assistance"'
+    enabled: true
+
+  - name: Australia — Engineering Manager Visa
+    query: '"Engineering Manager" Australia "visa sponsorship"'
+    enabled: true
+
   - name: Australia — Engineering Manager
     query: '"Engineering Manager" Frontend Australia'
     enabled: true
@@ -910,8 +1211,28 @@ search_queries:
     query: '"Frontend Engineer" Remote React TypeScript'
     enabled: true
 
-  - name: Remote — Staff Engineer
-    query: '"Staff Engineer" Frontend Remote'
+  - name: Germany — Frontend Visa
+    query: '"Frontend Engineer" Germany "visa sponsorship" OR "relocation"'
+    enabled: true
+
+  - name: Germany — React Berlin
+    query: 'site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io React Berlin'
+    enabled: true
+
+  - name: France — Frontend Paris
+    query: '"Frontend Engineer" Paris "visa sponsorship" OR "relocation"'
+    enabled: true
+
+  - name: Singapore — Frontend Visa
+    query: '"Frontend Engineer" Singapore "visa sponsorship" OR "relocation"'
+    enabled: true
+
+  - name: UK — Visa Sponsor List
+    query: '"Frontend Engineer" "Tier 2" OR "Skilled Worker Visa" site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io'
+    enabled: true
+
+  - name: EU — Blue Card Frontend
+    query: '"Frontend Engineer" "Blue Card" OR "Relocation Support" Europe'
     enabled: true
 
   - name: SEEK — Frontend Engineer
