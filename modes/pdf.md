@@ -18,7 +18,8 @@
 12. Generate full HTML from template + personalized content
 13. Read `name` from `config/profile.yml` → normalize to kebab-case lowercase (e.g. "John Doe" → "john-doe") → `{candidate}`
 14. Write HTML to `/tmp/cv-{candidate}-{company}.html`
-15. Execute: `node generate-pdf.mjs /tmp/cv-{candidate}-{company}.html output/cv-{candidate}-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
+15. Execute: `node generate-pdf.mjs /tmp/cv-{candidate}-{company}.html output/{company}/cv-{candidate}-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
+    (create the `output/{company}/` directory first if it does not exist)
 16. Report: PDF path, number of pages, keyword coverage %
 
 ## ATS Rules (clean parsing)
@@ -157,7 +158,7 @@ f. `commit-editing-transaction` to save (ONLY after user approval)
 a. `export-design` the duplicate as PDF (format: a4 or letter based on JD location)
 b. **IMMEDIATELY** download the PDF using Bash:
    ```bash
-   curl -sL -o "output/cv-{candidate}-{company}-canva-{YYYY-MM-DD}.pdf" "{download_url}"
+   curl -sL -o "output/{company}/cv-{candidate}-{company}-canva-{YYYY-MM-DD}.pdf" "{download_url}"
    ```
    The export URL is a pre-signed S3 link that expires in ~2 hours. Download it right away.
 c. Verify the download:
